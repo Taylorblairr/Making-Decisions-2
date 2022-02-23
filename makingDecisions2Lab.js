@@ -7,7 +7,8 @@ var arr = [10,20,30,40,50,60]
 */
 
 //Code Here
-var firstItem = 0
+var firstItem = [10];
+console.log (firstItem)
 
 ////////// PROBLEM 2 //////////
 /*
@@ -15,7 +16,8 @@ var firstItem = 0
 */
 
 //Code Here
-
+var lastItemRemoved = arr.pop()
+  console.log(lastItemRemoved)
 ////////// PROBLEM 3 //////////
 
 // Do not edit the code below.
@@ -27,8 +29,11 @@ var family = ['Tyler', 'Jordan', 'Ryan', 'Alice', 'Ireland'];
 */
 
 //Code Here
-
-
+for (let i = 0; i < family.length; i++) {
+  family[i]
+  console.log(family)
+}
+ 
 
 ////////// PROBLEM 4 //////////
 
@@ -40,7 +45,12 @@ let evensArr = []
 /*
   Use a for-loop to iterate through each number in the 'nums' array, if the number is even, append it to the 'evensArr'.
 */
-
+for (let i = 0; i < nums.length; i++) {
+  if ((nums[i] % 2)=== 0){
+console.log(nums[i]);
+evensArr.push(nums[i])
+console.log(evensArr)
+}}
 //Code Here
 
 
@@ -54,7 +64,17 @@ var score = 74
 /*
   Determine if the letter grade of the given variable 'score'. If the variable is a 90 or above, console log an 'A', between 80 and 89, console log a 'B', between 70 and 79, 'C', between 60 and 69, 'D', and anything below 60 should console log an 'F'.
 */
-
+if (score > 90){
+  console.log("You got an A!")
+} else if (score <= 89) {
+  console.log("B")
+ } else if (score <= 79){
+  console.log("C")
+ } else if (score <= 69){
+  console.log("D")
+ } else if (score < 60){
+  console.log("F")
+}
 //Code Here
 
 
